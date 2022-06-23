@@ -1,0 +1,13 @@
+SELECT * FROM "KIET1"
+create or replace procedure KIET111(Studid in kiet1.sid%type,
+Studname in kiet1.sname%type,
+StudNumber in kiet1.phone%type)
+is 
+BEGIN
+insert into kiet1 values( Studid, Studname , StudNumber);
+end;
+begin 
+kiet111('107','Vikas',68995768);
+end;
+
+select * from kiet1 order by sname desc;
