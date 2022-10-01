@@ -72,3 +72,4 @@ WHERE to_char(DOJ,'YYYY') = '1991'
 SELECT *
 FROM employees
 WHERE to_char(DOJ,'MON') NOT IN ('FEB');
+
